@@ -2,8 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--background); 
-    font-family: 'Segoe UI', monospace;
+    font-family: 'Segoe UI', monospace, Georgia, 'Times New Roman', Times, serif;
     color: var(--text-primary);
 }
 :root {
@@ -25,24 +24,41 @@
   --accent: #e11d48;         /* Rojo acento, evocando la identidad original */
   --hsla-example: hsla(210, 90%, 40%, 1); /* Azul saturado como ejemplo */
 }
+.container{display: flex;position: relative;padding: 20px;align-items: center;background-color: var(--accent);}
+.lg{display: flex;justify-content: flex-start;margin: 0px;
+  width: 120px;border-radius: 100%; margin-left: 20px;
+}
+.container h2 {
+  font-size: 42px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
 main {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  min-height: 100vh; /* ocupa toda la pantalla */
+  min-height: 100vh; 
+  font-size: 20px;
 }
 
-form {
+form {font-size: 18px;
   background: #fff;
   padding: 50px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc dashed;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
+fieldset{
+  display: flex;justify-content: center;margin: 10px auto;
+}
 table {
-  width: 80%;
+  width: 100%;
+  margin: 10px;
+  font-size: 15px;
 }
 
 /* Todas las celdas */
@@ -51,16 +67,16 @@ td {
   vertical-align: middle;
 }
 
-/* Primera columna (labels) */
-td:first-child { background-color: gray;
+
+td:first-child { background-color: rgb(151, 145, 145);
   font-weight: bold;
   text-align: left;        /* alinea el texto a la derecha */
   padding-right: 10px;      /* espacio entre label y input */
 }
 
-/* Segunda columna (inputs) */
+
 td:last-child {
-  background-color: var(--text-muted);  color: var();   /* color para los campos a llenar */
+  background-color: var(--input-bg);     
 }
 
 input, select {
@@ -70,11 +86,12 @@ input, select {
   border-radius: 4px;
 }
 
-
+p{display: flex;justify-content: center;align-items: center;font-size: 15px;
+}
 
 button{
     padding: 10px;
-    margin-top: 15px;
+    margin: 15px;
     background: var(--primary-dark);
     color: var(--background);
     border: none;
@@ -84,4 +101,69 @@ button{
 button:hover{
     color: black;
     background-color: var(--primary-hover);
+}
+footer{
+  display: flex;justify-content: center;align-items: center;margin: 20px;
+}
+/* mobile */
+@media (max-width: 600px){
+ .container{display: flex;position: relative;padding: 10px;align-items: center;}
+.lg{display: flex;justify-content: flex-start;
+  width: 90px;border-radius: 100%;margin-left: 15px;
+}
+.container h2 {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 28px;
+}
+  form{justify-content: column;align-items: center;text-align: center;margin: 10px;font-size: 15px;
+  }
+  fieldset{
+    padding: 20px; margin: 0;display: flex;justify-content: center;border-radius: 12px;
+  }
+  table{
+    display: flex;justify-content: center;width: 100%;margin: 10px;
+  }
+  p{
+    margin: 10px;text-align: center;
+  }
+  footer{
+    display: flex;text-align: center;justify-content: center;align-items: center;margin: 15px;
+  }
+  
+  .btn button{
+    display: block;margin: 5px auto; text-align: center;
+  }
+}
+/* tablet */
+@media (min-width: 601px) and (max-width: 768px){
+ .container{display: flex;position: relative;padding: 10px;align-items: center;}
+.lg{display: flex;justify-content: flex-start;
+  width: 90px;border-radius: 100%;margin-left: 26px;
+}
+.container h2 {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 28px;
+}
+  fieldset{
+    padding: 20px; margin: 0;display: flex;justify-content: center;border-radius: 12px;
+  }
+  table{
+    display: flex;justify-content: center;width: 100%;margin: 10px;
+  }
+  p{
+    margin: 10px;text-align: center;
+  }
+  footer{
+    display: flex;text-align: center;justify-content: center;align-items: center;margin: 15px;
+  }
+ .btn button{
+    display: block;margin: 5px auto; text-align: center;
+  }
+ 
 }

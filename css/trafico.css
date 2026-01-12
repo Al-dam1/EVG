@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', monospace;
+    color: var(--text-primary);
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --primary: #1a4b84;        /* Azul corporativo, transmite confianza */
+  --primary-dark: #0d2c4a;   /* Azul profundo para headers y botones */
+  --primary-hover: #2563eb;  /* Azul vibrante para interacción */
+  --primary-light: #60a5fa;  /* Azul claro para detalles y resaltes */
+  
+  --background: #f8fafc;     /* Fondo claro, limpio y accesible */
+  --text-primary: #0f172a;   /* Texto principal en gris muy oscuro */
+  --text-secondary: #334155; /* Texto secundario en gris medio */
+  --text-muted: #64748b;     /* Texto deshabilitado o menos relevante */
+  
+  --border: rgba(0, 0, 0, 0.1); /* Bordes suaves */
+  --card-bg: #ffffff;        /* Tarjetas y paneles en blanco */
+  --shadow: rgba(0, 0, 0, 0.15); /* Sombras ligeras para profundidad */
+  
+  --input-bg: #e2e8f0;       /* Campos de formulario con gris claro */
+  --accent: #e11d48;         /* Rojo acento, evocando la identidad original */
+  --hsla-example: hsla(210, 90%, 40%, 1); /* Azul saturado como ejemplo */
+}
+
+
+.aviso{
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+ margin: 15px 15px;
+ padding: 10px;
+  box-shadow: 0 4px 10px 2px rgba(15, 42, 198, 0.6);
+border-radius: 8px;
+}
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* scroll suave en mobile */
+}
+
+
+
+table{
+      /* min-width: 900px; o 800px */
+  background-color: var(--background);
+  color: white;
+  font-size: 15px;
+   width: 100%;
+  border-collapse: collapse;
+}
+caption{
+  background-color: var(--primary-dark);
+  color: white;
+  text-decoration: underline;
+  font-size: 17px;
+}
+.cabecera{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-dark);
+}
+.cabecera p{
+  color: white;
+  text-decoration: underline;
+  font-size: 28px;
+}
+.info{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background);
+  font-size: 26px;
+}
+.info-ramal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 4px;
+background-color: #8bb5d6;
+}
+.info-link{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+background-color: #8bb5d6;
+margin-bottom: 10px;
+}
+table thead{
+  background-color: #E3EEF6;
+  color: black;
+}
+thead th{
+  position: sticky;
+  top: 0;
+  background-color: #8bb5d6;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  border: 1px solid #ccc;
+  z-index: 2;
+}
+tbody tr {
+  background-color: #f9f9f9; /* color base de la fila */
+}
+tbody td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: var(--card-bg);
+}
+tbody td:first-child {
+  background-color: #D6EAF8; /* solo la primera columna */
+  font-weight: bold;
+}
+th, td u {
+  text-decoration: underline;
+}  
+td.empty{
+  color: #777;
+  font-style: italic;
+  background-color: #f0f0f0;
+}
+/* mobile */
+/* @media (min-width:570px){
+    .cabecera{display: flex;justify-content: center;align-items: center;width: auto;width: 100%;}
+    .info{display: flex;flex-direction: column;align-items: center;}
+     .aviso {
+    font-size: 14px;
+    text-align: center;
+  }
+    table{width:  100%;margin: 5px auto;align-items: center;}
+    .cabecera,
+.info,
+.aviso,
+.table-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+} */
+ @media (max-width: 576px) {
+  .cabecera,
+  .info,
+  .aviso {
+    font-size: 25px;
+    text-align: center;
+  }
+.cabecera p{font-size: 27px;}
+  .aviso {
+    font-size: 20px;
+    margin: 14px 14px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+}
+
+/* tablet */
+@media(min-width: 576px) and (max-width: 768px){
+     .cabecera{display: flex;justify-content: center;align-items: center;width: auto;width: 100%;}
+    .info{display: flex;flex-direction: column;align-items: center;font-size: 25px;}
+   .cabecera p{font-size: 29px;}
+  .aviso {
+    font-size: 23px;
+    margin: 14px 14px;
+  }
+
+    table{width:  100%;margin: 5px auto;align-items: center;}
+}

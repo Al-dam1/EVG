@@ -141,106 +141,12 @@ color: var(--primary-dark);
 
 
 
-/* trafico */
- /* para las lineas en ramales */
-.aviso{
-  background-color: yellow;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
- margin: 5px 0 25px 0;
- padding: 10px;
-  box-shadow: 0 4px 10px 2px rgba(15, 42, 198, 0.6);
-border-radius: 8px;
-}
-table{
-  background-color: var(--background);
-  color: white;
-  font-size: 15px;
-   width: 100%;
-  border-collapse: collapse;
-}
-caption{
-  background-color: var(--primary-dark);
-  color: white;
-  text-decoration: underline;
-  font-size: 17px;
-}
-.cabecera{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--primary-dark);
-}
-.cabecera p{
-  color: white;
-  text-decoration: underline;
-  font-size: 20px;
-}
-.info{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--background);
-  font-size: 18px;
-}
-.info-ramal{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 4px;
-background-color: #8bb5d6;
-}
-.info-link{
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-background-color: #8bb5d6;
-margin-bottom: 20px;
-}
-table thead{
-  background-color: #E3EEF6;
-  color: black;
-}
-thead th{
-  position: sticky;
-  top: 0;
-  background-color: #8bb5d6;
-  color: rgb(0, 0, 0);
-  padding: 8px;
-  border: 1px solid #ccc;
-  z-index: 2;
-}
-tbody tr {
-  background-color: #f9f9f9; /* color base de la fila */
-}
-tbody td {
-  padding: 8px;
-  border: 1px solid #ccc;
-  background-color: var(--card-bg);
-}
-tbody td:first-child {
-  background-color: #D6EAF8; /* solo la primera columna */
-  font-weight: bold;
-}
-th, td u {
-  text-decoration: underline;
-}  
-td.empty{
-  color: #777;
-  font-style: italic;
-  background-color: #f0f0f0;
-}
-
 
 /* Tablet */
 @media (max-width: 1024px) {}
 
 /* Tablet chica */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hamburger{
     display: block;
   }
@@ -260,8 +166,8 @@ td.empty{
   .navLinks.active{
     clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
-  }
-  .navLinks li{
+  } */
+  /* .navLinks li{
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.3s ease;
@@ -278,9 +184,9 @@ td.empty{
 
 
 
-
+/* 
 /* Celular */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   
   header{
     flex-wrap: wrap; /* 🔑 CLAVE */
@@ -331,8 +237,8 @@ td.empty{
     width: 100%;
     margin: 0;
   }
-}
-
+} */
+*/ */
 
 /* PARADAS */
 /* main{

@@ -23,8 +23,7 @@ links.forEach(links =>{
   })
 })
 
-const paradas = {
-    <script>
+
 // Objeto con ramales y sus paradas
 const paradas = {
   "239p": [
@@ -225,4 +224,3 @@ const paradas = {
 
   // Podés seguir agregando "266R1", "266R2", "266R4" con sus arrays de paradas
 };
-</script>
