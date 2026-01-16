@@ -260,36 +260,3 @@ color: var(--primary-dark);
     margin: 0;
   }
 }
-
-/* PARADAS */
-/* main{
-  display: flex;
-  justify-content: center;
-  flex-direction: column; 
-  text-align: center;
-  width: 80%;
-} */
-button{
-  background-color: var(--primary-dark);
-  color: white;
-  font-size: 22px;
-  font-weight: bolder;
-  margin: 3px;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-}
-.btns{
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-}
-
-
-
-select, input[type="radio"]{
-    margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: var(--input-bg);
-    border:1px solid var(--border)
-}
