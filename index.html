@@ -15,6 +15,7 @@
 
   <!-- JS de Swiper -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
 </head>
 
@@ -61,9 +62,10 @@
         rodar los primeros colectivos, modestos, ruidosos, pero llenos de vida: eran más que vehículos, eran la manera
         de unir familias, trabajos y sueños.</p>
       <div class="foto">
-        <img src="https://static.unremis.com.ar/expreso-villa-galicia-san-jose-1-2-3-4-5-6-p-s-266.webp"
-          alt="Colectivo actual Línea 266">
+        
       </div>
+      <div data-aos="flip-right"> <img src="https://static.unremis.com.ar/expreso-villa-galicia-san-jose-1-2-3-4-5-6-p-s-266.webp"
+          alt="Colectivo actual Línea 266"> </div>
       <p class="conocenos2">Con el correr de los años, los colores del <strong> Expreso Villa Galicia San José</strong>
         se volvieron parte del paisaje del sur del Gran Buenos Aires. Los viejos Bedford y los Mercedes-Benz de los 70
         marcaron una época: ventanillas abiertas, asientos duros, choferes que conocían a cada pasajero por nombre. Cada
@@ -72,15 +74,13 @@
         Rafael Calzada, Florencio Varela, Ministro Rivadavia, San Francisco Solano. Cada recorrido fue un hilo que tejió
         la trama urbana, llevando estudiantes, trabajadores, abuelos y niños que aprendieron a mirar el mundo desde la
         ventana de un 266.</p>
-      <div class="foto">
-        <img
+      <div class="contenedor-img"><div data-aos="flip-left"> <img
           src="https://media.licdn.com/dms/image/v2/D4D22AQH7-2HMVBr-kQ/feedshare-shrink_800/B4DZpwlpxtJAAg-/0/1762825511757?e=2147483647&v=beta&t=2HwqzzBgLTcPaQX7kfFJ9vpLltxLOZZRs3448sFYdQg"
-          alt="Colectivo Línea 266 en servicio">
-      </div>
-      <div class="foto">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR95palO04adSFz1XE1X-GmC4fuKOlgdne29Q&s"
-          alt="Colectivo antiguo Línea 266">
-      </div>
+          alt="Colectivo Línea 266 en servicio"></div>
+      
+     <div data-aos="flip-right"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR95palO04adSFz1XE1X-GmC4fuKOlgdne29Q&s"
+          alt="Colectivo antiguo Línea 266"></div></div>
+      
       <p class="conocenos-final">Hoy, casi cien años después, la flota luce moderna, con carrocerías Metalpar, Ugarte y
         Nuovobus. Los colectivos tienen rampas, suspensiones más suaves y ventanales amplios. Pero detrás de cada viaje
         sigue latiendo la misma esencia: la de una empresa que nació del barrio y que todavía se reconoce en cada
@@ -258,7 +258,8 @@
         </div>
       </section>
   </main>
-  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+  <script> AOS.init(); </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <script src="./js/script.js"></script>
