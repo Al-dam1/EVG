@@ -5,12 +5,7 @@
     font-family: 'Segoe UI', monospace;
     color: var(--text-primary);
 }
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
+main { max-width: 1000px; /* ancho máximo para todo el contenido */ margin: 0 auto; /* centra todo */ padding: 10px; } .cabecera, .info, .aviso, table { width: 100%; /* todos ocupan el mismo ancho */ box-sizing: border-box; }
 :root {
   --primary: #1a4b84;        /* Azul corporativo, transmite confianza */
   --primary-dark: #0d2c4a;   /* Azul profundo para headers y botones */
@@ -150,30 +145,42 @@ td.empty{
 }
 
 } */
+
 @media (max-width: 576px) {
   .cabecera,
   .info,
   .aviso {
-    width: 100%;
-    font-size: 18px;   /* más equilibrado */
+    font-size: 16px;
     text-align: center;
   }
 
   .cabecera p {
-    font-size: 20px;   /* un poco más grande que el resto */
+    font-size: 18px;
   }
 
   .aviso {
-    font-size: 16px;   /* más pequeño pero consistente */
+    font-size: 15px;
     margin: 14px;
   }
 
   table {
-    font-size: 14px;   /* que no se vea gigante */
-    width: 100%;       /* ocupa todo el ancho en mobile */
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table caption {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  table th, table td {
+    padding: 6px;
+    word-wrap: break-word;
   }
 }
-
 
 /* tablet */
 @media(min-width: 576px) and (max-width: 768px){
