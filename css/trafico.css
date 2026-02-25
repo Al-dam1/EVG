@@ -150,23 +150,30 @@ td.empty{
 }
 
 } */
- @media (max-width: 576px) {
+@media (max-width: 576px) {
   .cabecera,
   .info,
   .aviso {
-    font-size: 25px;
+    width: 100%;
+    font-size: 18px;   /* más equilibrado */
     text-align: center;
   }
-.cabecera p{font-size: 27px;}
+
+  .cabecera p {
+    font-size: 20px;   /* un poco más grande que el resto */
+  }
+
   .aviso {
-    font-size: 20px;
-    margin: 14px 14px;
+    font-size: 16px;   /* más pequeño pero consistente */
+    margin: 14px;
   }
 
   table {
-    font-size: 16px;
+    font-size: 14px;   /* que no se vea gigante */
+    width: 100%;       /* ocupa todo el ancho en mobile */
   }
 }
+
 
 /* tablet */
 @media(min-width: 576px) and (max-width: 768px){
