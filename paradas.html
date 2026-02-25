@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradas EVG</title>
+    <link rel="stylesheet" href="./css/paradas.css" />
+    <link rel="shortcut icon" href="/icono.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      
+        <button>Paradas EVG</button>
+      
+      
+
+      <select name="select" id="select">
+        <option value="">selecione un ramal</option>
+        <option value="239-R-P">Linea 239 - ramal p</option>
+        <option value="263-R-R">linea 264 - ramal rojo</option>
+        <option value="266-R-1">linea 266 - ramal 1</option>
+        <option value="266-R-2">linea 266 - ramal 2</option>
+        <option value="266-R-4">linea 266 - ramal 4</option>
+        <option value="266-R-5">linea 266 - ramal 5</option>
+        <option value="266-R-6">linea 266 - ramal 6</option>
+        <option value="293-R-AS">linea 293 - ramal AS</option>
+        <option value="436-R-7/8">linea 436 - ramal 7/8</option>
+        <option value="510-R-B.L">linea 510 ramal B. Libertad</option>
+        <option value="510-R-R/E">linea 510 ramal Rep./Espora</option>
+        <option value="564-R-3">linea 564 - ramal 3</option>
+        <option value="564-R-9">linea 564 - ramal 9</option>
+      </select>
+      <div class="btns">
+        <label for="ida">
+          Ida
+          <input type="radio" name="direccion" id="ida" value="ida" />
+        </label>
+
+        <label for="vuelta">
+          Vuelta
+          <input type="radio" name="direccion" id="vuelta" value="vuelta" />
+        </label>
+      </div>
+      <button id="parada" style="display: flex">Paradas</button>
+
+      <div id="resultado"></div>
+    </main>
+    <script src="/js/paradas.js"></script>
+    <script src="/js/paradas.jsonp"></script>
+  </body>
+</html>

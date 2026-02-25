@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: var(--background); */
+  font-family: "Segoe UI", monospace;
+  color: var(--text-primary);
+}
+:root {
+  --primary: #1a4b84; /* Azul corporativo, transmite confianza */
+  --primary-dark: #0d2c4a; /* Azul profundo para headers y botones */
+  --primary-hover: #2563eb; /* Azul vibrante para interacción */
+  --primary-light: #60a5fa; /* Azul claro para detalles y resaltes */
+
+  --background: #f8fafc; /* Fondo claro, limpio y accesible */
+  --text-primary: #0f172a; /* Texto principal en gris muy oscuro */
+  --text-secondary: #334155; /* Texto secundario en gris medio */
+  --text-muted: #64748b; /* Texto deshabilitado o menos relevante */
+
+  --border: rgba(0, 0, 0, 0.1); /* Bordes suaves */
+  --card-bg: #ffffff; /* Tarjetas y paneles en blanco */
+  --shadow: rgba(0, 0, 0, 0.15); /* Sombras ligeras para profundidad */
+
+  --input-bg: #e2e8f0; /* Campos de formulario con gris claro */
+  --accent: #e11d48; /* Rojo acento, evocando la identidad original */
+  --hsla-example: hsla(210, 90%, 40%, 1); /* Azul saturado como ejemplo */
+}
+body {
+  width: 100%;
+  max-width: 100%;
+}
+header {
+  background-color: var(--primary-dark);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: var(--border);
+}
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.navLinks a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+  color: var(--primary-light);
+}
+main {
+  color: var(--primary-dark);
+}
+.conocenos {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f1f5f9;
+}
+.conocenos img {
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+.contenedor-img img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .contenedor-img img{
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+.conocenos h2 {
+  text-align: center;
+}
+
+.conocenos p {
+  text-align: justify; /* o left/right según prefieras */
+}
+.conocenos .conocenos-inicio,
+.conocenos-final {
+  text-align: end;
+}
+.modelos {
+  padding: 2rem;
+  background-color: var(--background);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  overflow: hidden;
+  width: 250px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  margin: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--primary);
+}
+
+.card p {
+  padding: 0 1rem;
+  color: var(--text-secondary);
+  margin: 10px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+}
+
+/* Tablet chica */
+/* Tablet chica */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* Overlay desenfocado */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    display: none;
+  }
+
+  /* Menú sobrepuesto */
+  .navLinks {
+    position: absolute;
+    top: 60px;
+    right: 55px;
+    width: 80%;
+    max-width: 300px;
+    background-color: var(--primary-dark);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    display: none;
+    z-index: 10;
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  .navLinks li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+  }
+
+  .navLinks.active li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navLinks li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .navLinks li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .navLinks li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .navLinks li:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .contenedor-img img {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-img img{
+    min-width: 400px;
+    width: 90%;
+  }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+  header {
+    flex-wrap: wrap; /* 🔑 CLAVE */
+  }
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    background-color: var(--primary-dark);
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  .carouselSlide,
+  .carousel-inner {
+    width: 100%;
+  }
+  .conocenos {
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  .contenedor-img img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .contenedor-img img{
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .modelos {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+  .cards {
+    width: 100%;
+    margin: 0;
+  }
+}

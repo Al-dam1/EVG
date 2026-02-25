@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", monospace;
+  color: var(--text-primary);
+}
+:root {
+  --primary: #1a4b84; /* Azul corporativo, transmite confianza */
+  --primary-dark: #0d2c4a; /* Azul profundo para headers y botones */
+  --primary-hover: #2563eb; /* Azul vibrante para interacción */
+  --primary-light: #60a5fa; /* Azul claro para detalles y resaltes */
+
+  --background: #f8fafc; /* Fondo claro, limpio y accesible */
+  --text-primary: #0f172a; /* Texto principal en gris muy oscuro */
+  --text-secondary: #334155; /* Texto secundario en gris medio */
+  --text-muted: #64748b; /* Texto deshabilitado o menos relevante */
+
+  --border: rgba(0, 0, 0, 0.1); /* Bordes suaves */
+  --card-bg: #ffffff; /* Tarjetas y paneles en blanco */
+  --shadow: rgba(0, 0, 0, 0.15); /* Sombras ligeras para profundidad */
+
+  --input-bg: #e2e8f0; /* Campos de formulario con gris claro */
+  --accent: #e11d48; /* Rojo acento, evocando la identidad original */
+  --hsla-example: hsla(210, 90%, 40%, 1); /* Azul saturado como ejemplo */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.container{display: flex;position: relative;padding: 20px;align-items: center;}
+.lg{display: flex;justify-content: flex-end;margin: 0px;
+  width: 120px;border-radius: 100%; margin-left: 20px;
+}
+button {
+  background-color: var(--primary-dark);
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 3px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+#select {
+  display: block; /* lo convierte en bloque */
+  margin: 1rem auto; /* auto lo centra horizontalmente */
+  padding: 0.5rem 1rem;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 60%;
+} 
+
+#select option {
+  text-align: center; 
+  border-radius: var(--border);
+} 
+
+input[type="radio"] {
+  margin: 0.5rem;
+  accent-color: var(--border); /* cambia el color del radio */
+}
+#resultado {
+  align-items: center;
+}
+ul {
+  display: inline-block;
+  background-color: white;
+  margin: 0 auto;
+  list-style: none;
+}
+li {
+  background-color: rgb(149, 148, 148);
+  padding: 4px;
+  border-radius: var(--border);
+  margin: 5px;
+  font-size: 24px;
+}
+li:hover {
+  color: black;
+}
