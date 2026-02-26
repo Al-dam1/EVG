@@ -51,6 +51,7 @@ form {font-size: 18px;
   border: 1px solid #ccc dashed;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+width:100%
 }
 fieldset{
   display: flex;justify-content: center;margin: 10px auto;
