@@ -292,12 +292,27 @@ main {
 
 /* Celular */
 @media (max-width: 480px) {
- .nav-container { display: flex; justify-content: flex-start; /* todo arranca desde la izquierda */ align-items: center; width: 100%; padding: 0 15px; } .hambur { display: flex; align-items: center; margin-left: 0; /* evita que se empuje a la derecha */ }
+  .nav-container {
+    display: flex;
+    justify-content: flex-start;
+    /* todo arranca desde la izquierda */
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .hambur {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    /* evita que se empuje a la derecha */
+  }
+
   .logo img {
     display: none;
   }
 
-  
+
 
   .hamburger {
     display: block;
@@ -314,16 +329,25 @@ main {
   }
 
   nav.active {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-dark);
+    z-index: 10;
   }
 
-  nav ul {
+  nav.active ul {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
   }
 
-  nav ul li {
+  nav.active ul li {
     margin: 0.5rem 0;
   }
 
