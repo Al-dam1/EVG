@@ -107,8 +107,8 @@ footer{
   display: flex;justify-content: center;align-items: center;margin: 20px;
 }
 /* mobile */
-@media (max-width: 600px){
- .container { display: flex; justify-content: space-between;align-items: center; padding: 10px; }
+@media (max-width: 600px){main{padding:0;margin:0;}
+ .container { display: flex; justify-content: space-between; /* logo a la izquierda, h2 a la derecha */ align-items: center; padding: 10px; }
   .lg { width: 90px; border-radius: 100%; margin-left: 10px; }
    .container h2 { flex: 1;
     text-align: right;
@@ -127,16 +127,16 @@ footer{
     font-size: 14px;
   }
 
-  fieldset { border: none;
+  fieldset {
+    padding: 20px;
     margin: 0;
-     padding: 0; }
-      table { width: 100%;
-         margin: 0;
-    font-size: 14px;
-    border-collapse: collapse;
-  } 
-  table th, table td { padding: 6px;
-     word-wrap: break-word; }
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+  }
+
+table { width: 100%;margin: 0;font-size: 14px; border-collapse: collapse; } 
+table th, table td { padding: 6px; word-wrap: break-word; }
 
   p {
     margin: 10px;

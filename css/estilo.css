@@ -5,6 +5,8 @@
   /* background-color: var(--background); */
   font-family: "Segoe UI", monospace;
   color: var(--text-primary);
+  letter-spacing: normal;
+   word-spacing: normal;
 }
 :root {
   --primary: #1a4b84; /* Azul corporativo, transmite confianza */

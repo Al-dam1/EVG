@@ -58,7 +58,9 @@ table{
   font-size: 15px;
    width: 100%;
   border-collapse: collapse;
+  display:block;
 }
+thead th { position: sticky; top: 0; z-index: 2; padding: 8px; }
 caption{
   background-color: var(--primary-dark);
   color: white;
@@ -155,8 +157,11 @@ td.empty{
   }
 
   .aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
-    margin: 10px 15px;
+    margin: 0;
   }
 
   table { width: 100%;
@@ -170,7 +175,9 @@ td.empty{
     text-align: center;
     margin-bottom: 8px;
   }
-
+thead th { position: sticky; top: 0;
+  z-index: 2;
+   padding: 8px; }
   table th, table td {
     padding: 6px;
     word-wrap: break-word;
