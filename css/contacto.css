@@ -123,7 +123,7 @@ footer{
 
   .container h2 {
     position: absolute;
-    left: 50%;              /* centrado real */
+    left: 65%;             
     transform: translateX(-50%);
     margin: 0;
     font-size: 18px;
@@ -148,13 +148,7 @@ footer{
     border-radius: 12px;
   }
 
-  table {
-    width: 100%;
-    font-size: 14px;
-    display: block;
-    overflow-x: auto;       /* scroll si se desborda */
-    margin: 10px 0;
-  }
+  table { width: 100%; /* ocupa todo el ancho */ margin: 0; /* elimina márgenes que la achican */ font-size: 14px; border-collapse: collapse; }
 
   p {
     margin: 10px;
