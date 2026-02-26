@@ -301,14 +301,14 @@ main {
   }
 
   .logo img {
-    width: 100px;
-    border-radius: 3px;
+    display: none;
   }
 
   .hambur {
     display: flex;
     align-items: center;
     margin-left: auto;
+    /* empuja el icono hacia la derecha */
   }
 
   .hamburger {
