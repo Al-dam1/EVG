@@ -51,6 +51,7 @@ form {font-size: 18px;
   border: 1px solid #ccc dashed;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+width:100%
 }
 fieldset{
   display: flex;justify-content: center;margin: 10px auto;
@@ -106,7 +107,7 @@ footer{
   display: flex;justify-content: center;align-items: center;margin: 20px;
 }
 /* mobile */
-@media (max-width: 600px){
+@media (max-width: 600px)main{width:100%;}
  .container{display: flex;position: relative;padding: 10px;align-items: center;}
 .lg{display: flex;justify-content: flex-start;
   width: 90px;border-radius: 100%;margin-left: 15px;
@@ -116,9 +117,10 @@ footer{
   left: 60%;
   transform: translateX(-50%);
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
 }
-  form{justify-content: column;align-items: center;text-align: center;margin: 10px;font-size: 15px;
+  form{justify-content: column;align-items: center;text-align: center;margin: 0px;
+width:100% font-size: 15px;
   }
   fieldset{
     padding: 20px; margin: 0;display: flex;justify-content: center;border-radius: 12px;
