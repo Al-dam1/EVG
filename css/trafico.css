@@ -132,6 +132,7 @@ td.empty{
   font-style: italic;
   background-color: #f0f0f0;
 }
+.ramal-card { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 5px; background: #fff; }
 /* mobile */
 @media (max-width: 576px) {
   main {
@@ -158,11 +159,7 @@ td.empty{
     margin: 14px;
   }
 
-  table {
-    font-size: 14px;
-    width: 100%;   /* 🔑 igual que cabecera/info/aviso */
-    border-collapse: collapse;
-  }
+  table { width: 100%; font-size: 14px; display: block; overflow-x: auto; /* scroll horizontal si se desborda */ }
 
   table caption {
     font-size: 16px;
