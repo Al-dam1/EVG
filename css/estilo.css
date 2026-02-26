@@ -256,18 +256,9 @@ main {
 }
 
 /* Celular */
-@media (max-width: 480px) {
- .nav-container { display: flex;
-   justify-content: space-between;
-    align-items: center;
-   width: 100%; }
-    .hamburger { display: block;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer; }
-
+@media (max-width: 480px) {main{letter-spacing: normal;
+   word-spacing: normal;}
+ .nav-container { display: flex; justify-content: space-between; /* logo a la izquierda, hamburguesa a la derecha */ align-items: center; width: 100%; padding: 0 15px; /* aire a los lados */ } .nav-container img { width: 120px; border-radius: 3px; } .hamburger { display: block; font-size: 2rem; background: none; border: none; color: white; cursor: pointer; }
   nav {
     width: 100%;
     background-color: var(--primary-dark);
