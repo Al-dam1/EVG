@@ -304,21 +304,7 @@ main {
     display: none;
   }
 
-  .hambur {
-    display: flex;
-    align-items:flex-start;
-    margin-left: auto;
-    /* empuja el icono hacia la derecha */
-  }
-
-  .hamburger {
-    display: block;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
+ .hambur { display: flex; align-items: center; margin-left: 0; /* lo deja pegado a la izquierda */ justify-content: flex-start; } .hamburger { display: block; font-size: 2rem; background: none; border: none; color: white; cursor: pointer; }
 
   nav {
     width: 100%;
