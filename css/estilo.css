@@ -256,7 +256,8 @@ main {
 /* Celular */
 @media (max-width: 480px) {
   header {
-    flex-wrap: wrap; /* 🔑 CLAVE */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .hamburger {
     display: block;
