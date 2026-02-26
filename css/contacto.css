@@ -114,12 +114,13 @@ footer{
 }
 .container h2 {
   position: absolute;
-  left: 60%;
+  left: 40%;
   transform: translateX(-50%);
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
 }
-  form{justify-content: column;align-items: center;text-align: center;margin: 10px;font-size: 15px;
+  form{justify-content: column;align-items: center;text-align: center;margin: 0px;
+width:100% font-size: 15px;
   }
   fieldset{
     padding: 20px; margin: 0;display: flex;justify-content: center;border-radius: 12px;
