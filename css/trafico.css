@@ -38,7 +38,7 @@ main { max-width: 1000px;
   align-items: center;
   justify-content: center;
   font-size: 23px;
- margin: 15px 15px;
+ margin: 20px 0px;
  padding: 10px;
   box-shadow: 0 4px 10px 2px rgba(15, 42, 198, 0.6);
 border-radius: 8px;
@@ -132,7 +132,7 @@ td.empty{
   font-style: italic;
   background-color: #f0f0f0;
 }
-.ramal-card { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 5px; background: #fff; }
+
 /* mobile */
 @media (max-width: 576px) {
   main {
@@ -156,10 +156,13 @@ td.empty{
 
   .aviso {
     font-size: 15px;
-    margin: 14px;
+    margin: 10px 15px;
   }
 
-  table { width: 100%; font-size: 14px; display: block; overflow-x: auto; /* scroll horizontal si se desborda */ }
+  table { width: 100%;
+     font-size: 14px;
+      display: block;
+       overflow-x: auto;}
 
   table caption {
     font-size: 16px;

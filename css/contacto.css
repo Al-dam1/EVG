@@ -107,7 +107,7 @@ footer{
   display: flex;justify-content: center;align-items: center;margin: 20px;
 }
 /* mobile */
-@media (max-width: 600px)main{width:100%;}
+@media (max-width: 600px){
  .container{display: flex;position: relative;padding: 10px;align-items: center;}
 .lg{display: flex;justify-content: flex-start;
   width: 90px;border-radius: 100%;margin-left: 15px;
@@ -118,16 +118,19 @@ footer{
   transform: translateX(-50%);
   margin: 0;
   font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
 }
   form{justify-content: column;align-items: center;text-align: center;margin: 0px;
-width:100% font-size: 15px;
+width:100%; font-size: 15px;
   }
   fieldset{
     padding: 20px; margin: 0;display: flex;justify-content: center;border-radius: 12px;
   }
-  table{
-    display: flex;justify-content: center;width: 100%;margin: 10px;
-  }
+   table { width: 100%;
+     font-size: 14px;
+      display: block;
+     overflow-x: auto;
   p{
     margin: 10px;text-align: center;
   }
@@ -137,8 +140,8 @@ width:100% font-size: 15px;
   
   .btn button{
     display: block;margin: 5px auto; text-align: center;
-  }
-}
+  }}
+
 /* tablet */
 @media (min-width: 601px) and (max-width: 768px){
  .container{display: flex;position: relative;padding: 10px;align-items: center;}
