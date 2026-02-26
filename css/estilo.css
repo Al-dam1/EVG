@@ -294,8 +294,7 @@ main {
 @media (max-width: 480px) {
   .nav-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     padding: 0 20px;
   }
@@ -304,7 +303,22 @@ main {
     display: none;
   }
 
- .hambur { display: flex; align-items: center; margin-left: 0; /* lo deja pegado a la izquierda */ justify-content: flex-start; } .hamburger { display: block; font-size: 2rem; background: none; border: none; color: white; cursor: pointer; }
+  .hambur {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    /* lo deja pegado a la izquierda */
+    justify-content: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
 
   nav {
     width: 100%;
