@@ -108,39 +108,72 @@ footer{
 }
 /* mobile */
 @media (max-width: 600px){
- .container{display: flex;position: relative;padding: 10px;align-items: center;}
-.lg{display: flex;justify-content: flex-start;
-  width: 90px;border-radius: 100%;margin-left: 15px;
+  .container {
+    display: flex;
+    position: relative;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .lg {
+    width: 90px;
+    border-radius: 100%;
+    margin-left: 15px;
+  }
+
+  .container h2 {
+    position: absolute;
+    left: 50%;              /* centrado real */
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 18px;
+    color: white;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column; /* 🔑 corrección */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  fieldset {
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    overflow-x: auto;       /* scroll si se desborda */
+    margin: 10px 0;
+  }
+
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .btn button {
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+  }
 }
-.container h2 {
-  position: absolute;
-  left: 60%;
-  transform: translateX(-50%);
-  margin: 0;
-  font-size: 24px;
-  display: flex;
-  justify-content: flex-end;
-}
-  form{justify-content: column;align-items: center;text-align: center;margin: 0px;
-width:100%; font-size: 15px;
-  }
-  fieldset{
-    padding: 20px; margin: 0;display: flex;justify-content: center;border-radius: 12px;
-  }
-   table { width: 100%;
-     font-size: 14px;
-      display: block;
-     overflow-x: auto;
-  p{
-    margin: 10px;text-align: center;
-  }
-  footer{
-    display: flex;text-align: center;justify-content: center;align-items: center;margin: 15px;
-  }
-  
-  .btn button{
-    display: block;margin: 5px auto; text-align: center;
-  }}
 
 /* tablet */
 @media (min-width: 601px) and (max-width: 768px){
