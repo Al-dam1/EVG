@@ -292,24 +292,12 @@ main {
 
 /* Celular */
 @media (max-width: 480px) {
-  .nav-container {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    padding: 0 20px;
-  }
-
+ .nav-container { display: flex; justify-content: flex-start; /* todo arranca desde la izquierda */ align-items: center; width: 100%; padding: 0 15px; } .hambur { display: flex; align-items: center; margin-left: 0; /* evita que se empuje a la derecha */ }
   .logo img {
     display: none;
   }
 
-  .hambur {
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-    /* lo deja pegado a la izquierda */
-    justify-content: flex-start;
-  }
+  
 
   .hamburger {
     display: block;
