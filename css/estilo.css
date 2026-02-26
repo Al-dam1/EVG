@@ -255,13 +255,16 @@ main {
 
 /* Celular */
 @media (max-width: 480px) {
-  header {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .hamburger {
-    display: block;
-  }
+ .nav-container { display: flex;
+   justify-content: space-between;
+    align-items: center;
+   width: 100%; }
+    .hamburger { display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer; }
 
   nav {
     width: 100%;
