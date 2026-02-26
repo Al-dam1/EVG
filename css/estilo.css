@@ -297,6 +297,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 20px;
   }
 
   .logo img {
@@ -306,7 +307,8 @@ main {
 
   .hambur {
     display: flex;
-    align-items:flex-end;
+    align-items: center;
+    margin-left: auto;
   }
 
   .hamburger {
